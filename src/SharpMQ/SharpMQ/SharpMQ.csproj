@@ -52,8 +52,9 @@
     <Compile Include="Protocols\BodyCommand.cs" />
     <Compile Include="Protocols\BodyReply.cs" />
     <Compile Include="Protocols\BuryCommand.cs" />
+    <Compile Include="Protocols\HeadBodyProtocol.cs" />
     <Compile Include="Protocols\ProtocolConstants.cs" />
-    <Compile Include="Protocols\CommandFactory.cs" />
+    <Compile Include="Protocols\ProtocolFactory.cs" />
     <Compile Include="Protocols\DeleteCommand.cs" />
     <Compile Include="Protocols\IgnoreCommand.cs" />
     <Compile Include="Protocols\ReleaseCommand.cs" />
