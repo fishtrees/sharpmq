@@ -13,7 +13,7 @@ namespace SharpMQ.Core
     internal class MessageQueueClient
     {
         private readonly IClientDummy _TcpClientDummy;
-        private readonly CommandFactory _CommandFactory = new CommandFactory();
+        private readonly ProtocolFactory _CommandFactory = new ProtocolFactory();
 
         public long Id { get; set; }
         public List<string> WatchingTubeList { get; private set; }
