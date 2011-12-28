@@ -9,7 +9,7 @@ namespace SharpMQ.Protocols
     {
         public string TubeName { get; set; }
 
-        public override byte[] CreateBytes()
+        public override byte[] ToBytes()
         {
             StringBuilder cmd = new StringBuilder();
             cmd.Append("watch");

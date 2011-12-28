@@ -13,7 +13,7 @@ namespace SharpMQ.Protocols
         public int TimeToRun { get; set; }
 
 
-        public override byte[] CreateBytes()
+        public override byte[] ToBytes()
         {
 //put <pri> <delay> <ttr> <bytes>\r\n
 //<data>\r\n
