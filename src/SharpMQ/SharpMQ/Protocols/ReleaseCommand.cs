@@ -11,7 +11,7 @@ namespace SharpMQ.Protocols
         public int Priority { get; set; }
         public int Delay { get; set; }
 
-        public override byte[] CreateBytes()
+        public override byte[] ToBytes()
         {
             //release <id> <pri> <delay>\r\n
             StringBuilder cmd = new StringBuilder();

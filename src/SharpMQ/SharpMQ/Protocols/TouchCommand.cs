@@ -9,7 +9,7 @@ namespace SharpMQ.Protocols
     {
         public long JobId { get; set; }
 
-        public override byte[] CreateBytes()
+        public override byte[] ToBytes()
         {
             StringBuilder cmd = new StringBuilder();
             cmd.Append("touch");

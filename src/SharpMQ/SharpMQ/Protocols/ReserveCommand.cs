@@ -7,7 +7,7 @@ namespace SharpMQ.Protocols
 {
     internal class ReserveCommand : Command
     {
-        public override byte[] CreateBytes()
+        public override byte[] ToBytes()
         {
             StringBuilder cmd = new StringBuilder();
             cmd.Append("reserve");
@@ -16,11 +16,11 @@ namespace SharpMQ.Protocols
         }
     }
 
-    internal class ReserveWithTimeoutRequest : Command
+    internal class ReserveWithTimeoutCommand : Command
     {
         public int Timeout { get; set; }
 
-        public override byte[] CreateBytes()
+        public override byte[] ToBytes()
         {
             StringBuilder cmd = new StringBuilder();
             cmd.Append("reserve-with-timeout");
@@ -31,7 +31,7 @@ namespace SharpMQ.Protocols
         }
     }
 
-    internal class ReserveResponse : BodyReply
+    internal class ReserveReply : BodyReply
     {
         public long JobId { get; set; }
 
